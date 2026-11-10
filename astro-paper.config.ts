@@ -8,7 +8,7 @@ export default defineAstroPaperConfig({
     author: "yiming",
     profile: "https://read.thinkly.cc/about/",
     ogImage: "default-og.jpg",
-    lang: "zh-CN",
+    lang: "en",
     timezone: "Asia/Shanghai",
     dir: "ltr",
   },
