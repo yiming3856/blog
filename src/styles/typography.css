@@ -5,6 +5,9 @@
   .app-prose {
     @apply prose;
 
+    /* 正文行高：中文建议 1.9 到 2.0，默认只有 1.75 */
+    line-height: 1.95;
+
     h1,
     h2,
     h3,
@@ -13,8 +16,14 @@
       @apply text-foreground mb-3;
     }
 
+    /* 标题上方多留白，章节之间更分明 */
+    h2 {
+      margin-top: 2.5em;
+    }
+
     h3 {
       @apply italic;
+      margin-top: 2em;
     }
 
     p,
@@ -27,6 +36,12 @@
       @apply text-foreground;
     }
 
+    /* 段落之间的间距 */
+    p {
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+    }
+
     a {
       @apply text-foreground hover:text-accent wrap-break-word decoration-dashed underline-offset-4 focus-visible:no-underline;
     }
@@ -35,8 +50,11 @@
       @apply overflow-x-clip;
     }
 
+    /* 列表项之间的间距 */
     li {
       @apply marker:text-accent;
+      margin-top: 0.6em;
+      margin-bottom: 0.6em;
     }
 
     hr {
@@ -115,6 +133,8 @@
 
     pre {
       @apply focus-visible:outline-accent focus-visible:border-transparent focus-visible:outline-2 focus-visible:outline-dashed;
+      /* 代码块保持紧凑，不跟随正文的宽行距 */
+      line-height: 1.7;
     }
   }
 
