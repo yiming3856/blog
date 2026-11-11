@@ -4,7 +4,7 @@ export default {
   nav: {
     home: "首页",
     posts: "文章",
-    tags: "标签",
+    tags: "分类",
     about: "关于",
     archives: "归档",
     search: "搜索",
@@ -15,7 +15,7 @@ export default {
     sharePostIntro: "分享这篇文章:",
     sharePostOn: "分享到 {{platform}}",
     sharePostViaEmail: "通过邮件分享",
-    tagLabel: "标签",
+    tagLabel: "分类",
     backToTop: "回到顶部",
     tableOfContents: "目录",
     goBack: "返回",
@@ -30,8 +30,8 @@ export default {
   },
   home: {
     socialLinks: "社交链接",
-    featured: "精选",
-    recentPosts: "最新文章",
+    featured: "精选文章",
+    recentPosts: "最近更新",
     allPosts: "全部文章",
   },
   footer: {
@@ -39,10 +39,10 @@ export default {
     allRightsReserved: "保留所有权利。",
   },
   pages: {
-    tagTitle: "标签",
+    tagTitle: "分类",
     tagDesc: "带有该标签的所有文章",
 
-    tagsTitle: "标签",
+    tagsTitle: "分类",
     tagsDesc: "文章中用到的所有标签。",
 
     postsTitle: "文章",
