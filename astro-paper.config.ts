@@ -2,11 +2,11 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://read.thinkly.cc/",
+    url: "https://notes.thinkly.cc/",
     title: "thinkly札记",
     description: "个人知识博客,用来记录日常的所思所想,也整理学习和工作中积累的知识。",
     author: "yiming",
-    profile: "https://read.thinkly.cc/about/",
+    profile: "https://notes.thinkly.cc/about/",
     ogImage: "default-og.jpg",
     lang: "en",
     timezone: "Asia/Shanghai",
