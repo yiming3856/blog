@@ -19,8 +19,12 @@ const t = useTranslations(locale);
 
 const posts = await getCollection("posts");
 const sortedPosts = getSortedPosts(posts);
-const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+const featuredPosts = sortedPosts
+  .filter(({ data }) => data.featured)
+  .slice(0, 3);
+const recentPosts = sortedPosts.filter(
+  post => !featuredPosts.includes(post)
+);
 const homePath = getRelativeLocaleUrl(locale, "");
 ---
 
@@ -33,7 +37,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
     class="app-layout my-1"
   >
     <section id="hero" class="border-border border-b pt-8 pb-6">
-      <h1 class="my-4 inline-block text-2xl font-bold sm:my-8 sm:text-2xl">
+      <h1 class="my-4 inline-block text-2xl font-bold sm:my-8 sm:text-3xl">
         慢下来，记录生活的点滴
       </h1>{" "}
       <a
